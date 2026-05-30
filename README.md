@@ -1,9 +1,109 @@
 # Codex Skills
 
-Public repository for reusable Codex skills.
+Публичный репозиторий с переиспользуемыми Codex skills для продаж, маркетинга и рабочих процессов.
 
-## Included skills
+> Public repository with reusable Codex skills. The first release is a Russian-language B2B cold email skill.
 
-- `cold-b2b-email` - Russian-language B2B cold sales emails and follow-up sequences.
+Этот репозиторий намеренно минимальный: в нем один публичный skill и нет приватных файлов проектов, клиентских данных, внутренних заметок, расшифровок звонков или документов PRACTIM.
 
-This repository intentionally contains only public skill files. No private project files, sales data, customer data, or PRACTIM internal documents are included.
+## Featured Skill
+
+### `cold-b2b-email`
+
+Codex skill для холодных B2B-писем на русском языке.
+
+Он помогает писать первое холодное письмо и цепочку follow-up так, чтобы письмо звучало как сообщение от сильного B2B-продавца: лично, конкретно, без давления и без шаблонного AI-языка.
+
+Skill оптимизирован не под красивую рассылку, а под следующий шаг в продаже:
+
+- получить ответ
+- назначить звонок
+- добиться пересылки HR / CEO / ответственному
+- получить разрешение прислать сценарий пилота
+- пригласить на презентацию продукта
+- отработать молчание после первого касания
+
+## Что Внутри
+
+```text
+skills/
+  cold-b2b-email/
+    SKILL.md
+    agents/
+      openai.yaml
+    references/
+      outbound-mechanics.md
+      project-adaptation.md
+      quality-checklist.md
+```
+
+`SKILL.md` содержит основной workflow: какие вопросы задавать, как писать письмо, как собирать контекст и как объяснять логику результата.
+
+`outbound-mechanics.md` содержит механики первого письма, follow-up 3-5 касаний, CTA, темы писем и работу со ссылками.
+
+`project-adaptation.md` помогает адаптировать skill под любой проект: proof points, запретные слова, buyer lenses, позиционирование и ограничения.
+
+`quality-checklist.md` проверяет письмо перед выдачей: человечность, сила CTA, бизнес-боль, риски, claims и качество sequence.
+
+## Как Работает
+
+При запуске skill сначала спрашивает:
+
+1. Какая цель письма?
+2. Какой ожидаемый результат?
+
+Затем уточняет только то, что нужно для сильного письма:
+
+- кому пишем
+- нужна ли цепочка 3-5 писем
+- нужны ли версии под разные боли, сегменты или роли
+- вставлять ли ссылку и какую
+- какие proof points можно использовать
+- есть ли запретные слова или claims
+- какой следующий шаг в продажах
+
+Skill также читает контекст проекта, если он доступен: `AGENTS.md`, `.agents/product-marketing-context.md`, `.claude/product-marketing-context.md`, sales notes или расшифровки звонков.
+
+## Установка
+
+```bash
+git clone https://github.com/yanaproduct-hub/codex-skills.git
+mkdir -p ~/.codex/skills
+cp -R codex-skills/skills/cold-b2b-email ~/.codex/skills/
+```
+
+После этого можно запускать Codex и просить письмо или outbound sequence.
+
+Пример:
+
+```text
+Use cold-b2b-email. Напиши первое холодное B2B письмо и цепочку из 4 follow-up для HRD. Цель: получить разрешение прислать сценарий пилота.
+```
+
+## Принципы
+
+- Одно письмо, одна задача.
+- Письмо должно звучать как человек, а не как шаблон.
+- Первый экран письма должен быть про мир клиента, не про продукт.
+- CTA должен быть легким для ответа в одну строку.
+- Proof points используются только после проверки, что их можно использовать.
+- Follow-up должен добавлять новый смысл, а не писать "просто напоминаю".
+- Нельзя использовать fake `Re:` / `Fwd:`, ложную срочность, давление, завышенные promises и непроверенные claims.
+
+## Безопасность
+
+Skill текстовый: внутри нет скриптов, токенов, сетевых вызовов или скрытой автоматизации.
+
+Для чувствительных тем skill просит ограничения проекта перед написанием: медицинские claims, финансовые обещания, внутренние метрики, клиентские имена, юридические ограничения, запрещенные формулировки.
+
+Для массового outbound пользователь отвечает за законность базы, отписку, sender reputation, bounce rate, spam complaints и региональные требования.
+
+## Release
+
+Latest release:
+
+- [cold-b2b-email v0.1.0](https://github.com/yanaproduct-hub/codex-skills/releases/tag/v0.1.0)
+
+## License
+
+MIT
