@@ -10,8 +10,7 @@
 
 | Skill | Описание | Статус |
 | --- | --- | --- |
-| [`cold-b2b-email-ru`](skills/cold-b2b-email-ru/) | Холодные B2B-письма и follow-up цепочки на русском языке: ответ, звонок, пересылка ЛПР, пилот, презентация. | `v0.2.1` |
-| [`cold-b2b-email-en`](skills/cold-b2b-email-en/) | English B2B cold emails and follow-up sequences: reply, routing, call, demo, pilot, product conversation. | `v0.2.1` |
+| [`cold-b2b-email`](skills/cold-b2b-email/) | Пакет для холодных B2B-писем: отдельные skill для русского и английского outbound. | `v0.3.0` |
 
 ## Как Установить Skill
 
@@ -20,23 +19,28 @@
 ```bash
 git clone https://github.com/yanaproduct-hub/codex-skills.git
 mkdir -p ~/.codex/skills
-cp -R codex-skills/skills/cold-b2b-email-ru ~/.codex/skills/
-cp -R codex-skills/skills/cold-b2b-email-en ~/.codex/skills/
 ```
 
-Можно установить только один нужный skill, скопировав его папку из `skills/`.
+Для `cold-b2b-email` установите нужный языковой вариант:
+
+```bash
+cp -R codex-skills/skills/cold-b2b-email/ru ~/.codex/skills/cold-b2b-email-ru
+cp -R codex-skills/skills/cold-b2b-email/en ~/.codex/skills/cold-b2b-email-en
+```
 
 ## Структура Репозитория
 
 ```text
 skills/
-  skill-name/
+  skill-pack-name/
     README.md
-    SKILL.md
-    agents/
-      openai.yaml
-    references/
-      ...
+    variant-or-skill-name/
+      README.md
+      SKILL.md
+      agents/
+        openai.yaml
+      references/
+        ...
 ```
 
 Каждый skill должен быть самодостаточным:
@@ -56,7 +60,7 @@ skills/
 
 ## Releases
 
-- [`cold-b2b-email ru/en v0.2.1`](https://github.com/yanaproduct-hub/codex-skills/releases/tag/v0.2.1)
+- [`cold-b2b-email v0.3.0`](https://github.com/yanaproduct-hub/codex-skills/releases/tag/v0.3.0)
 
 ## License
 

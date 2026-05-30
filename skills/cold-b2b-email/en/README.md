@@ -40,7 +40,7 @@ From the cloned repository root:
 
 ```bash
 mkdir -p ~/.codex/skills
-cp -R skills/cold-b2b-email-en ~/.codex/skills/
+cp -R skills/cold-b2b-email/en ~/.codex/skills/cold-b2b-email-en
 ```
 
 Or in one flow:
@@ -48,7 +48,7 @@ Or in one flow:
 ```bash
 git clone https://github.com/yanaproduct-hub/codex-skills.git
 mkdir -p ~/.codex/skills
-cp -R codex-skills/skills/cold-b2b-email-en ~/.codex/skills/
+cp -R codex-skills/skills/cold-b2b-email/en ~/.codex/skills/cold-b2b-email-en
 ```
 
 ## Example Prompt
@@ -96,4 +96,4 @@ For scaled outbound, users are responsible for legal compliance, sender reputati
 
 ## Release
 
-- [`v0.2.1`](https://github.com/yanaproduct-hub/codex-skills/releases/tag/v0.2.1)
+- [`v0.3.0`](https://github.com/yanaproduct-hub/codex-skills/releases/tag/v0.3.0)
