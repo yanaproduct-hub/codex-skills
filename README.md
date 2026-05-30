@@ -10,8 +10,8 @@
 
 | Skill | Описание | Статус |
 | --- | --- | --- |
-| [`cold-b2b-email-ru`](skills/cold-b2b-email-ru/) | Холодные B2B-письма и follow-up цепочки на русском языке: ответ, звонок, пересылка ЛПР, пилот, презентация. | `v0.2.0` |
-| [`cold-b2b-email-en`](skills/cold-b2b-email-en/) | English B2B cold emails and follow-up sequences: reply, routing, call, demo, pilot, product conversation. | `v0.2.0` |
+| [`cold-b2b-email-ru`](skills/cold-b2b-email-ru/) | Холодные B2B-письма и follow-up цепочки на русском языке: ответ, звонок, пересылка ЛПР, пилот, презентация. | `v0.2.1` |
+| [`cold-b2b-email-en`](skills/cold-b2b-email-en/) | English B2B cold emails and follow-up sequences: reply, routing, call, demo, pilot, product conversation. | `v0.2.1` |
 
 ## Как Установить Skill
 
@@ -56,7 +56,7 @@ skills/
 
 ## Releases
 
-- [`cold-b2b-email ru/en v0.2.0`](https://github.com/yanaproduct-hub/codex-skills/releases/tag/v0.2.0)
+- [`cold-b2b-email ru/en v0.2.1`](https://github.com/yanaproduct-hub/codex-skills/releases/tag/v0.2.1)
 
 ## License
 

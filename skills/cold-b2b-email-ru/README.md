@@ -107,4 +107,4 @@ Skill текстовый: внутри нет скриптов, токенов, 
 
 ## Release
 
-- [`v0.2.0`](https://github.com/yanaproduct-hub/codex-skills/releases/tag/v0.2.0)
+- [`v0.2.1`](https://github.com/yanaproduct-hub/codex-skills/releases/tag/v0.2.1)
