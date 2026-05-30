@@ -1,0 +1,3 @@
+display_name: Cold B2B Email EN
+short_description: Writes English B2B cold emails and follow-up sequences that move prospects toward replies, calls, pilots, demos, and product conversations.
+default_prompt: Write a first-touch B2B cold email and follow-up sequence. First ask for the email goal, expected result, target buyer, proof points, links, and banned claims.

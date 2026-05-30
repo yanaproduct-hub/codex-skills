@@ -10,7 +10,8 @@
 
 | Skill | Описание | Статус |
 | --- | --- | --- |
-| [`cold-b2b-email`](skills/cold-b2b-email/) | Холодные B2B-письма и follow-up цепочки на русском языке: reply, звонок, пересылка ЛПР, пилот, презентация. | `v0.1.2` |
+| [`cold-b2b-email-ru`](skills/cold-b2b-email-ru/) | Холодные B2B-письма и follow-up цепочки на русском языке: ответ, звонок, пересылка ЛПР, пилот, презентация. | `v0.2.0` |
+| [`cold-b2b-email-en`](skills/cold-b2b-email-en/) | English B2B cold emails and follow-up sequences: reply, routing, call, demo, pilot, product conversation. | `v0.2.0` |
 
 ## Как Установить Skill
 
@@ -19,10 +20,11 @@
 ```bash
 git clone https://github.com/yanaproduct-hub/codex-skills.git
 mkdir -p ~/.codex/skills
-cp -R codex-skills/skills/cold-b2b-email ~/.codex/skills/
+cp -R codex-skills/skills/cold-b2b-email-ru ~/.codex/skills/
+cp -R codex-skills/skills/cold-b2b-email-en ~/.codex/skills/
 ```
 
-Для другого skill замените `cold-b2b-email` на имя нужной папки.
+Можно установить только один нужный skill, скопировав его папку из `skills/`.
 
 ## Структура Репозитория
 
@@ -54,7 +56,7 @@ skills/
 
 ## Releases
 
-- [`cold-b2b-email v0.1.2`](https://github.com/yanaproduct-hub/codex-skills/releases/tag/v0.1.2)
+- [`cold-b2b-email ru/en v0.2.0`](https://github.com/yanaproduct-hub/codex-skills/releases/tag/v0.2.0)
 
 ## License
 
